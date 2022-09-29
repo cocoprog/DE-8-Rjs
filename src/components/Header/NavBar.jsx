@@ -5,16 +5,13 @@ export function NavBar () {
             <nav className="nav-container">
                 <ul className="nav">
                     <li className="nav-item">
-                        <NavLink to={'HOME'} className="nav-link">HOME</NavLink>
+                        <NavLink to={'/'} className="nav-link">HOME</NavLink>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="html/modelos.html">ALL</a>
+                        <NavLink to={'/category/zapato'} className="nav-link">ZAPATOS</NavLink>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="html/shop.html">ZAPATOS</a>
-                    </li>
-                    <li className="nav-item">
-                        <a className="nav-link" href="html/sEspera.html">BOTAS</a>
+                        <NavLink to={'/category/bota'} className="nav-link">BOTAS</NavLink>
                     </li>
                     <li className="nav-item">
                         <NavLink to={'contacto'} className="nav-link">CONTACTO</NavLink>
@@ -23,4 +20,3 @@ export function NavBar () {
             </nav>
     )
 }
-
